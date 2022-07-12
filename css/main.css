@@ -44,9 +44,12 @@ aside.left a:hover {
 .container {
   padding: 10rem 2rem 4rem 2rem;
   display: flex;
+  flex-direction: column;
   width: 80%;
   margin: 0 auto;
 }
+
+/* Style for jumbotron */
 .jumbotron {
   width: 100%;
   display: flex;
@@ -155,5 +158,61 @@ aside.left a:hover {
   }
   .jumbotron article p {
     max-width: 100%;
+  }
+}
+
+/* Style for about */
+.about {
+  margin-top: 8rem;
+  width: 100%;
+}
+.about .title h1 > strong {
+  font-size: 2.5rem;
+}
+.about .title h1 {
+  font-size: 3rem;
+  width: 100%;
+}
+.about .title h1 span {
+  width: 30%;
+  display: inline-block;
+  background: #ccc;
+  height: 1px;
+}
+.about .title strong {
+  font-size: 1.5rem;
+  color: #0088b9;
+}
+.about .title {
+  margin-bottom: 2rem;
+}
+.about article p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.about article .information {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.about article .information p {
+  font-weight: 600;
+}
+.about article .information p a {
+  text-decoration: none;
+  color: #000;
+}
+.about article .information p span {
+  color: #0088b9;
+  padding-right: 1rem;
+}
+@media screen and (max-width: 576px) {
+  .about .title h1 > strong {
+    font-size: 2rem;
+  }
+  .about .title h1 {
+    font-size: 2.5rem;
+    width: 100%;
   }
 }
