@@ -42,15 +42,118 @@ aside.left a:hover {
   color: #0088b9;
 }
 .container {
+  padding: 10rem 2rem 4rem 2rem;
   display: flex;
   width: 80%;
   margin: 0 auto;
+}
+.jumbotron {
+  width: 100%;
+  display: flex;
+}
+.jumbotron article {
+  width: 75%;
+}
+.jumbotron article strong {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #0088b9;
+}
+.jumbotron article h1 {
+  font-size: 6rem;
+  margin-top: 1rem;
+}
+.jumbotron article h1 span {
+  color: #0088b9;
+}
+.jumbotron article h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #0088b9;
+  font-weight: 700;
+}
+.jumbotron article p {
+  max-width: 90%;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #555;
+  margin-bottom: 2.5rem;
+}
+.jumbotron article a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0088b9;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #0088b9;
+  border-radius: 2rem;
+  transition: 0.4s;
+}
+.jumbotron article a:hover {
+  box-shadow: 0 0 0 4px rgba(0, 136, 185, 0.2);
+}
+.jumbotron img {
+  width: 300px;
+  height: 300px;
+  filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.1));
+  transition: 0.4s;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.jumbotron img:hover {
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.1));
+}
+@media screen and (max-width: 960px) {
+  .jumbotron article h1 {
+    font-size: 5rem;
+    margin-top: 0.5rem;
+  }
+  .jumbotron article h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .jumbotron img {
+    width: 250px;
+    height: 250px;
+  }
 }
 @media screen and (max-width: 768px) {
   aside {
     display: none;
   }
   .container {
+    padding: 10rem 4rem 4rem 4rem;
     width: 100%;
+  }
+  .jumbotron article a {
+    font-size: 1.3rem;
+  }
+  .jumbotron img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .jumbotron {
+    flex-direction: column-reverse;
+  }
+  .jumbotron article {
+    width: 100%;
+  }
+  .jumbotron img {
+    margin: 0 auto 3rem auto;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.1));
+  }
+  .jumbotron article h1 {
+    font-size: 4rem;
+    margin-top: 0.5rem;
+  }
+  .jumbotron article h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .jumbotron article p {
+    max-width: 100%;
   }
 }
