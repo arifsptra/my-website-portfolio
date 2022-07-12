@@ -1,6 +1,9 @@
 /* Style for navbar */
 @import url("navbar.css");
 
+/* Style for main */
+@import url("main.css");
+
 *,
 *::after,
 *::before {
