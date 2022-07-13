@@ -161,27 +161,31 @@ aside.left a:hover {
   }
 }
 
-/* Style for about */
+/* Style for about, education, skills, and portfolio */
 #about,
 #education,
-#skills {
+#skills,
+#portfolio {
   margin-top: 8rem;
   width: 100%;
 }
 #about .title h1 > strong,
 #education .title h1 > strong,
-#skills .title h1 > strong {
+#skills .title h1 > strong,
+#portfolio .title h1 > strong {
   font-size: 2.5rem;
 }
 #about .title h1,
 #education .title h1,
-#skills .title h1 {
+#skills .title h1,
+#portfolio .title h1 {
   font-size: 3rem;
   width: 100%;
 }
 #about .title h1 span,
 #education .title h1 span,
-#skills .title h1 span {
+#skills .title h1 span,
+#portfolio .title h1 span {
   width: 30%;
   display: inline-block;
   background: #ccc;
@@ -189,13 +193,15 @@ aside.left a:hover {
 }
 #about .title strong,
 #education .title strong,
-#skills .title strong {
+#skills .title strong,
+#portfolio .title strong {
   font-size: 1.5rem;
   color: #0088b9;
 }
 #about .title,
 #education .title,
-#skills .title {
+#skills .title,
+#portfolio .title {
   margin-bottom: 2rem;
 }
 #about article p {
@@ -222,12 +228,14 @@ aside.left a:hover {
 @media screen and (max-width: 576px) {
   #about .title h1 > strong,
   #education .title h1 > strong,
-  #skills .title h1 > strong {
+  #skills .title h1 > strong,
+  #portfolio .title h1 > strong {
     font-size: 2rem;
   }
   #about .title h1,
   #education .title h1,
-  #skills .title h1 {
+  #skills .title h1,
+  #portfolio .title h1 {
     font-size: 2.5rem;
     width: 100%;
   }
@@ -274,6 +282,9 @@ aside.left a:hover {
 #skills .wrapper article {
   margin-bottom: 1.5rem;
 }
+#skills .wrapper article:last-child {
+  margin-bottom: 0px;
+}
 @media screen and (max-width: 960px) {
   .wrapper article {
     width: 100%;
@@ -288,5 +299,80 @@ aside.left a:hover {
 @media screen and (max-width: 768px) {
   #skills .wrapper article {
     width: 100%;
+  }
+}
+.mainPortfolio {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.mainPortfolio .card {
+  position: relative;
+  width: 32.5%;
+  height: 35rem;
+  margin-bottom: 1.5rem;
+  background: #fafafa;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.mainPortfolio .card:hover {
+  top: -5px;
+}
+.mainPortfolio .card .cardHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+}
+.mainPortfolio .card .cardHeader > i {
+  color: #0088b9;
+}
+.mainPortfolio .card .cardHeader a {
+  color: #000;
+  font-size: 2rem;
+  transition: 0.4s;
+}
+.mainPortfolio .card .cardHeader a:hover {
+  color: #0088b9;
+}
+.mainPortfolio .card .cardTeks {
+  height: 30rem;
+}
+.mainPortfolio .card .cardTeks h5 {
+  color: #0088b9;
+  padding-top: 2rem;
+  font-size: 1.8rem;
+}
+.mainPortfolio .card .cardTeks p {
+  font-size: 1.4rem;
+}
+.mainPortfolio .card .cardFooter {
+  display: flex;
+  font-size: 1.2rem;
+}
+.mainPortfolio .card .cardFooter p {
+  margin-right: 1rem;
+}
+@media screen and (max-width: 960px) {
+  .mainPortfolio .card {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainPortfolio .card {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mainPortfolio .card {
+    height: 30rem;
+  }
+  .mainPortfolio .card .cardTeks {
+    height: 25rem;
   }
 }
