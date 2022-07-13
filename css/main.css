@@ -163,33 +163,39 @@ aside.left a:hover {
 
 /* Style for about */
 .about,
-.education {
+.education,
+.skills {
   margin-top: 8rem;
   width: 100%;
 }
 .about .title h1 > strong,
-.education .title h1 > strong {
+.education .title h1 > strong,
+.skills .title h1 > strong {
   font-size: 2.5rem;
 }
 .about .title h1,
-.education .title h1 {
+.education .title h1,
+.skills .title h1 {
   font-size: 3rem;
   width: 100%;
 }
 .about .title h1 span,
-.education .title h1 span {
+.education .title h1 span,
+.skills .title h1 span {
   width: 30%;
   display: inline-block;
   background: #ccc;
   height: 1px;
 }
 .about .title strong,
-.education .title strong {
+.education .title strong,
+.skills .title strong {
   font-size: 1.5rem;
   color: #0088b9;
 }
 .about .title,
-.education .title {
+.education .title,
+.skills .title {
   margin-bottom: 2rem;
 }
 .about article p {
@@ -215,11 +221,13 @@ aside.left a:hover {
 }
 @media screen and (max-width: 576px) {
   .about .title h1 > strong,
-  .education .title h1 > strong {
+  .education .title h1 > strong,
+  .skills .title h1 > strong {
     font-size: 2rem;
   }
   .about .title h1,
-  .education .title h1 {
+  .education .title h1,
+  .skills .title h1 {
     font-size: 2.5rem;
     width: 100%;
   }
@@ -252,11 +260,33 @@ aside.left a:hover {
   font-style: italic;
   list-style-position: inside;
 }
+.skills .wrapper article {
+  width: 32%;
+}
+.skills .wrapper article a {
+  text-decoration: none;
+  color: #555;
+  transition: 0.4s;
+}
+.skills .wrapper article a:hover {
+  color: #0088b9;
+}
+.skills .wrapper article {
+  margin-bottom: 1.5rem;
+}
 @media screen and (max-width: 960px) {
   .wrapper article {
     width: 100%;
   }
-  .wrapper article:first-child {
+  .education .wrapper article:first-child {
     margin-bottom: 3rem;
+  }
+  .skills .wrapper article {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .skills .wrapper article {
+    width: 100%;
   }
 }
