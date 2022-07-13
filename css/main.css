@@ -162,28 +162,34 @@ aside.left a:hover {
 }
 
 /* Style for about */
-.about {
+.about,
+.education {
   margin-top: 8rem;
   width: 100%;
 }
-.about .title h1 > strong {
+.about .title h1 > strong,
+.education .title h1 > strong {
   font-size: 2.5rem;
 }
-.about .title h1 {
+.about .title h1,
+.education .title h1 {
   font-size: 3rem;
   width: 100%;
 }
-.about .title h1 span {
+.about .title h1 span,
+.education .title h1 span {
   width: 30%;
   display: inline-block;
   background: #ccc;
   height: 1px;
 }
-.about .title strong {
+.about .title strong,
+.education .title strong {
   font-size: 1.5rem;
   color: #0088b9;
 }
-.about .title {
+.about .title,
+.education .title {
   margin-bottom: 2rem;
 }
 .about article p {
@@ -208,11 +214,49 @@ aside.left a:hover {
   padding-right: 1rem;
 }
 @media screen and (max-width: 576px) {
-  .about .title h1 > strong {
+  .about .title h1 > strong,
+  .education .title h1 > strong {
     font-size: 2rem;
   }
-  .about .title h1 {
+  .about .title h1,
+  .education .title h1 {
     font-size: 2.5rem;
     width: 100%;
+  }
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.wrapper article {
+  border-left: 0.1rem solid #ccc;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  width: 48%;
+}
+.wrapper article time {
+  text-align: right;
+  display: inline-block;
+  margin: 0.5rem auto;
+  font-weight: 600;
+  color: #0088b9;
+  width: 100%;
+}
+.wrapper article h4 {
+  margin: 1rem auto;
+  text-decoration: underline;
+}
+.wrapper article ul {
+  font-style: italic;
+  list-style-position: inside;
+}
+@media screen and (max-width: 960px) {
+  .wrapper article {
+    width: 100%;
+  }
+  .wrapper article:first-child {
+    margin-bottom: 3rem;
   }
 }
