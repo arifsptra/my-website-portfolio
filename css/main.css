@@ -165,27 +165,31 @@ aside.left a:hover {
 #about,
 #education,
 #skills,
-#portfolio {
+#portfolio,
+#contact {
   margin-top: 8rem;
   width: 100%;
 }
 #about .title h1 > strong,
 #education .title h1 > strong,
 #skills .title h1 > strong,
-#portfolio .title h1 > strong {
+#portfolio .title h1 > strong,
+#contact .title h1 > strong {
   font-size: 2.5rem;
 }
 #about .title h1,
 #education .title h1,
 #skills .title h1,
-#portfolio .title h1 {
+#portfolio .title h1,
+#contact .title h1 {
   font-size: 3rem;
   width: 100%;
 }
 #about .title h1 span,
 #education .title h1 span,
 #skills .title h1 span,
-#portfolio .title h1 span {
+#portfolio .title h1 span,
+#contact .title h1 span {
   width: 30%;
   display: inline-block;
   background: #ccc;
@@ -194,14 +198,16 @@ aside.left a:hover {
 #about .title strong,
 #education .title strong,
 #skills .title strong,
-#portfolio .title strong {
+#portfolio .title strong,
+#contact .title strong {
   font-size: 1.5rem;
   color: #0088b9;
 }
 #about .title,
 #education .title,
 #skills .title,
-#portfolio .title {
+#portfolio .title,
+#contact .title {
   margin-bottom: 2rem;
 }
 #about article p {
@@ -229,13 +235,15 @@ aside.left a:hover {
   #about .title h1 > strong,
   #education .title h1 > strong,
   #skills .title h1 > strong,
-  #portfolio .title h1 > strong {
+  #portfolio .title h1 > strong,
+  #contact .title h1 > strong {
     font-size: 2rem;
   }
   #about .title h1,
   #education .title h1,
   #skills .title h1,
-  #portfolio .title h1 {
+  #portfolio .title h1,
+  #contact .title h1 {
     font-size: 2.5rem;
     width: 100%;
   }
@@ -375,4 +383,81 @@ aside.left a:hover {
   .mainPortfolio .card .cardTeks {
     height: 25rem;
   }
+}
+#contact .mainContact {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#contact form {
+  position: relative;
+  top: -20px;
+  width: 48%;
+  font-size: 1.4rem;
+}
+#contact form label {
+  font-weight: 500;
+  background: #fff;
+  padding: 0 0.4rem;
+  position: relative;
+  bottom: -10px;
+  left: 40px;
+}
+#contact form input, textarea {
+  color: #555;
+  margin-bottom: 2rem;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border: 1px solid #ccc;
+  border-radius: 3rem;
+  font-family: "Poppins", sans-serif;
+}
+#contact form input:focus, textarea:focus {
+  outline: none;
+}
+#contact form input[type="submit"] {
+  font-size: 1.5rem;
+  color: #0088b9;
+  font-weight: 700;
+  border: 2px solid #0088b9;
+  padding: 1rem;
+  background: #fff;
+  margin-top: 1rem;
+  width: 150px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+#contact form input[type="submit"]:hover {
+  box-shadow: 0 0 0 4px rgba(0, 136, 185, 0.2);
+}
+#contact .ttd {
+  height: max-content;
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  border: 1px solid #ccc;
+  border-radius: 3rem;
+}
+#contact .ttd img {
+  width: 10rem;
+}
+#contact .ttd strong {
+  margin-top: 1.2rem;
+  font-size: 2.8rem;
+}
+#contact .ttd strong span {
+  color: #0088b9;
+}
+@media screen and (max-width: 768px){
+  #contact form {
+    width: 100%;
+  }
+  #contact .ttd {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
 }
