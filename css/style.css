@@ -4,6 +4,9 @@
 /* Style for main */
 @import url("main.css");
 
+/* Style for footer */
+@import url("footer.css");
+
 *,
 *::after,
 *::before {
