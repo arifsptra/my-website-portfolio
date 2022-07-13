@@ -50,39 +50,39 @@ aside.left a:hover {
 }
 
 /* Style for jumbotron */
-.jumbotron {
+#jumbotron {
   width: 100%;
   display: flex;
 }
-.jumbotron article {
+#jumbotron article {
   width: 75%;
 }
-.jumbotron article strong {
+#jumbotron article strong {
   font-size: 1.4rem;
   font-weight: 500;
   color: #0088b9;
 }
-.jumbotron article h1 {
+#jumbotron article h1 {
   font-size: 6rem;
   margin-top: 1rem;
 }
-.jumbotron article h1 span {
+#jumbotron article h1 span {
   color: #0088b9;
 }
-.jumbotron article h2 {
+#jumbotron article h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   color: #0088b9;
   font-weight: 700;
 }
-.jumbotron article p {
+#jumbotron article p {
   max-width: 90%;
   font-weight: 500;
   font-size: 1.4rem;
   color: #555;
   margin-bottom: 2.5rem;
 }
-.jumbotron article a {
+#jumbotron article a {
   display: inline-block;
   text-decoration: none;
   font-size: 1.5rem;
@@ -93,10 +93,10 @@ aside.left a:hover {
   border-radius: 2rem;
   transition: 0.4s;
 }
-.jumbotron article a:hover {
+#jumbotron article a:hover {
   box-shadow: 0 0 0 4px rgba(0, 136, 185, 0.2);
 }
-.jumbotron img {
+#jumbotron img {
   width: 300px;
   height: 300px;
   filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.1));
@@ -104,19 +104,19 @@ aside.left a:hover {
   border-radius: 10px;
   cursor: pointer;
 }
-.jumbotron img:hover {
+#jumbotron img:hover {
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.1));
 }
 @media screen and (max-width: 960px) {
-  .jumbotron article h1 {
+  #jumbotron article h1 {
     font-size: 5rem;
     margin-top: 0.5rem;
   }
-  .jumbotron article h2 {
+  #jumbotron article h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
-  .jumbotron img {
+  #jumbotron img {
     width: 250px;
     height: 250px;
   }
@@ -129,105 +129,105 @@ aside.left a:hover {
     padding: 10rem 4rem 4rem 4rem;
     width: 100%;
   }
-  .jumbotron article a {
+  #jumbotron article a {
     font-size: 1.3rem;
   }
-  .jumbotron img {
+  #jumbotron img {
     width: 200px;
     height: 200px;
   }
 }
 @media screen and (max-width: 576px) {
-  .jumbotron {
+  #jumbotron {
     flex-direction: column-reverse;
   }
-  .jumbotron article {
+  #jumbotron article {
     width: 100%;
   }
-  .jumbotron img {
+  #jumbotron img {
     margin: 0 auto 3rem auto;
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.1));
   }
-  .jumbotron article h1 {
+  #jumbotron article h1 {
     font-size: 4rem;
     margin-top: 0.5rem;
   }
-  .jumbotron article h2 {
+  #jumbotron article h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
   }
-  .jumbotron article p {
+  #jumbotron article p {
     max-width: 100%;
   }
 }
 
 /* Style for about */
-.about,
-.education,
-.skills {
+#about,
+#education,
+#skills {
   margin-top: 8rem;
   width: 100%;
 }
-.about .title h1 > strong,
-.education .title h1 > strong,
-.skills .title h1 > strong {
+#about .title h1 > strong,
+#education .title h1 > strong,
+#skills .title h1 > strong {
   font-size: 2.5rem;
 }
-.about .title h1,
-.education .title h1,
-.skills .title h1 {
+#about .title h1,
+#education .title h1,
+#skills .title h1 {
   font-size: 3rem;
   width: 100%;
 }
-.about .title h1 span,
-.education .title h1 span,
-.skills .title h1 span {
+#about .title h1 span,
+#education .title h1 span,
+#skills .title h1 span {
   width: 30%;
   display: inline-block;
   background: #ccc;
   height: 1px;
 }
-.about .title strong,
-.education .title strong,
-.skills .title strong {
+#about .title strong,
+#education .title strong,
+#skills .title strong {
   font-size: 1.5rem;
   color: #0088b9;
 }
-.about .title,
-.education .title,
-.skills .title {
+#about .title,
+#education .title,
+#skills .title {
   margin-bottom: 2rem;
 }
-.about article p {
+#about article p {
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
-.about article .information {
+#about article .information {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 2rem;
 }
-.about article .information p {
+#about article .information p {
   font-weight: 600;
 }
-.about article .information p a {
+#about article .information p a {
   text-decoration: none;
   color: #000;
 }
-.about article .information p span {
+#about article .information p span {
   color: #0088b9;
   padding-right: 1rem;
 }
 @media screen and (max-width: 576px) {
-  .about .title h1 > strong,
-  .education .title h1 > strong,
-  .skills .title h1 > strong {
+  #about .title h1 > strong,
+  #education .title h1 > strong,
+  #skills .title h1 > strong {
     font-size: 2rem;
   }
-  .about .title h1,
-  .education .title h1,
-  .skills .title h1 {
+  #about .title h1,
+  #education .title h1,
+  #skills .title h1 {
     font-size: 2.5rem;
     width: 100%;
   }
@@ -260,33 +260,33 @@ aside.left a:hover {
   font-style: italic;
   list-style-position: inside;
 }
-.skills .wrapper article {
+#skills .wrapper article {
   width: 32%;
 }
-.skills .wrapper article a {
+#skills .wrapper article a {
   text-decoration: none;
   color: #555;
   transition: 0.4s;
 }
-.skills .wrapper article a:hover {
+#skills .wrapper article a:hover {
   color: #0088b9;
 }
-.skills .wrapper article {
+#skills .wrapper article {
   margin-bottom: 1.5rem;
 }
 @media screen and (max-width: 960px) {
   .wrapper article {
     width: 100%;
   }
-  .education .wrapper article:first-child {
+  #education .wrapper article:first-child {
     margin-bottom: 3rem;
   }
-  .skills .wrapper article {
+  #skills .wrapper article {
     width: 48%;
   }
 }
 @media screen and (max-width: 768px) {
-  .skills .wrapper article {
+  #skills .wrapper article {
     width: 100%;
   }
 }
