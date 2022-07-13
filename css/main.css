@@ -14,7 +14,7 @@ aside {
 }
 aside.right a {
   padding: 9px 0;
-  color: #000;
+  color: #555;
   margin-bottom: 1.5rem;
   text-align: center;
   height: 50px;
@@ -59,8 +59,8 @@ aside.left a:hover {
   width: 75%;
 }
 #jumbotron article strong {
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: #0088b9;
 }
 #jumbotron article h1 {
@@ -79,9 +79,10 @@ aside.left a:hover {
 #jumbotron article p {
   max-width: 90%;
   font-weight: 500;
-  font-size: 1.4rem;
+  line-height: 2.6rem;
   color: #555;
-  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
 }
 #jumbotron article a {
   display: inline-block;
@@ -170,7 +171,7 @@ aside.left a:hover {
 #skills,
 #portfolio,
 #contact {
-  margin-top: 8rem;
+  padding-top: 8rem;
   width: 100%;
 }
 #about .title h1 > strong,
@@ -206,15 +207,19 @@ aside.left a:hover {
   font-size: 1.5rem;
   color: #0088b9;
 }
-#about .title,
+#about .title {
+  margin-bottom: 2rem;
+}
 #education .title,
 #skills .title,
 #portfolio .title,
 #contact .title {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 #about article p {
-  font-size: 1.4rem;
+  line-height: 2.6rem;
+  color: #555;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 #about article .information {
@@ -259,8 +264,10 @@ aside.left a:hover {
 .wrapper article {
   border-left: 0.1rem solid #ccc;
   border-radius: 1rem;
-  padding: 1rem;
-  font-size: 1.4rem;
+  padding: 1rem 1rem 1rem 2rem;
+  line-height: 2.6rem;
+  color: #555;
+  font-size: 1.5rem;
   width: 48%;
 }
 .wrapper article time {
@@ -272,10 +279,12 @@ aside.left a:hover {
   width: 100%;
 }
 .wrapper article h4 {
+  font-size: 1.3rem;
   margin: 1rem auto;
   text-decoration: underline;
 }
 .wrapper article ul {
+  list-style-color: #0088b9;
   font-style: italic;
   list-style-position: inside;
 }
@@ -407,7 +416,8 @@ aside.left a:hover {
   bottom: -10px;
   left: 40px;
 }
-#contact form input, textarea {
+#contact form input,
+textarea {
   color: #555;
   margin-bottom: 2rem;
   width: 100%;
@@ -416,7 +426,8 @@ aside.left a:hover {
   border-radius: 3rem;
   font-family: "Poppins", sans-serif;
 }
-#contact form input:focus, textarea:focus {
+#contact form input:focus,
+textarea:focus {
   outline: none;
 }
 #contact form input[type="submit"] {
@@ -454,7 +465,7 @@ aside.left a:hover {
 #contact .ttd strong span {
   color: #0088b9;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   #contact form {
     width: 100%;
   }
@@ -462,5 +473,4 @@ aside.left a:hover {
     width: 100%;
     margin-top: 2rem;
   }
-
 }
