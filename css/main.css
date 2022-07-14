@@ -405,13 +405,19 @@ aside.left a:hover {
 .mainPortfolio .card .cardHeader a:hover {
   color: #0088b9;
 }
+
 .mainPortfolio .card .cardTeks {
   height: 30rem;
 }
 .mainPortfolio .card .cardTeks h5 {
-  color: #0088b9;
+  color: #000;
   padding-top: 2rem;
   font-size: 1.8rem;
+  transition: 0.4s;
+}
+.mainPortfolio .card:hover .cardTeks h5{
+  color: #0088b9;
+  
 }
 .mainPortfolio .card .cardTeks p {
   font-size: 1.4rem;
