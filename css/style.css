@@ -20,3 +20,17 @@ html {
 body {
   font-family: "Poppins", sans-serif;
 }
+::-webkit-scrollbar {
+  right: 10px;
+  width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  width: 6px;
+  background: #ccc;
+}
