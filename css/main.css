@@ -296,22 +296,52 @@ aside.left a:hover {
 .wrapper article ul li {
   padding: 2px 0 2px 6px;
 }
-#skills .wrapper article {
-  width: 32%;
+.mainSkills {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
-#skills .wrapper article a {
-  text-decoration: none;
-  color: #555;
-  transition: 0.4s;
+.mainSkills .card {
+  margin-bottom: 4rem;
+  width: 48%;
 }
-#skills .wrapper article a:hover {
-  color: #0088b9;
+.mainSkills .card h3 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 0.4rem 1.5rem;
+  border-left: 2px solid #ccc;
 }
-#skills .wrapper article {
-  margin-bottom: 1.5rem;
+.mainSkills .card .wrapIcon {
+  margin-left: 1rem;
+  display: flex;
+  margin-top: 1.5rem;
 }
-#skills .wrapper article:last-child {
-  margin-bottom: 0px;
+.mainSkills .card .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  width: 50px;
+  height: 50px;
+  background: #fafafa;
+  border-radius: 50%;
+}
+.mainSkills .card .icon img {
+  width: 30px;
+}
+.icon .caption {
+  opacity: 0;
+  cursor: default;
+  position: absolute;
+  background: #555;
+  color: #fff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.4rem;
+  transform: translate(0%, 100%);
+  transition: 0.6s;
+}
+.icon:hover .caption {
+  opacity: 1;
 }
 @media screen and (max-width: 960px) {
   .wrapper article {
@@ -320,20 +350,20 @@ aside.left a:hover {
   #education .wrapper article:first-child {
     margin-bottom: 3rem;
   }
-  #skills .wrapper article {
-    width: 48%;
-  }
 }
 @media screen and (max-width: 768px) {
+  .mainSkills .card {
+    width: 100%;
+  }
+  .mainSkills .card:last-child {
+    margin-bottom: 0px;
+  }
   #jumbotron .text {
     height: 30px;
   }
   #jumbotron .text h2 {
     color: #0088b9;
     font-size: 2rem;
-  }
-  #skills .wrapper article {
-    width: 100%;
   }
 }
 .mainPortfolio {
