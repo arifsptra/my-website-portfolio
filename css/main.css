@@ -287,9 +287,14 @@ aside.left a:hover {
   text-decoration: underline;
 }
 .wrapper article ul {
-  list-style-color: #0088b9;
+  position: relative;
+  padding-left: 15px;
+  list-style-image: url("../img/polygon.png");
   font-style: italic;
-  list-style-position: inside;
+  list-style-position: outside;
+}
+.wrapper article ul li {
+  padding: 2px 0 2px 6px;
 }
 #skills .wrapper article {
   width: 32%;
