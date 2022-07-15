@@ -532,15 +532,16 @@ textarea:focus {
 .myAlert {
   border-radius: 2rem;
   margin: 0 auto 4rem auto;
-  width: 30rem;
+  width: 25rem;
   height: 6rem;
   background: rgba(0, 136, 185, 0.05);
   border: 2px solid #0088b9;
   text-align: center;
 }
 .myAlert p {
+  width: 100%;
   font-size: 1.2rem;
-  transform: translate(0%, 100%);
+  transform: translate(0%, 25%);
 }
 .myAlert .close {
   font-weight: 700;
@@ -548,11 +549,11 @@ textarea:focus {
   font-size: 1.5rem;
   border: none;
   background: none;
-  padding: 0;
+  padding: 20px;
   width: 1rem;
   height: 1rem;
   color: #000;
-  transform: translate(1330%, -170%);
+  transform: translate(-280%, -140%);
   transition: 0.4s;
 }
 .myAlert .close:hover {
