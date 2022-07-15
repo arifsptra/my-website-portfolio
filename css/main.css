@@ -74,17 +74,19 @@ aside.left a:hover {
   width: 100%;
   display: block;
 }
-#jumbotron .text {
-  height: 40px;
-  vertical-align: middle;
-  overflow: hidden;
-  margin-bottom: 2rem;
-}
-#jumbotron .text h2 {
-  color: #0088b9;
-  font-size: 2.5rem;
-  height: 40px;
-  transition: 1s ease-in-out;
+@media screen and (min-width: 300px) {
+  #jumbotron .text {
+    height: 30px;
+    vertical-align: middle;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  #jumbotron .text h2 {
+    color: #0088b9;
+    font-size: 2rem;
+    height: 30px;
+    transition: 1s ease-in-out;
+  }
 }
 #jumbotron article p {
   max-width: 90%;
@@ -235,7 +237,7 @@ aside.left a:hover {
 }
 #about article .information p a {
   text-decoration: none;
-  color: #000;
+  color: #555;
 }
 #about article .information p span {
   color: #0088b9;
